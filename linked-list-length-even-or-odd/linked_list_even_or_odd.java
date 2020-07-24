@@ -1,13 +1,18 @@
+
+class Node {
+  int data;
+  Node next;
+
+  Node(int d) {
+    data = d;
+    next = null;
+  }
+}
+
 /*
-class Node
-    {
-        int data;
-        Node next;
-        Node(int d) {data = d; next = null; }
-    }
-*/
-/* isLengthEvenorOdd method should return 1 if the length of LL is even
-   otherwise return 0.*/
+ * isLengthEvenorOdd method should return 1 if the length of LL is even
+ * otherwise return 0.
+ */
 
 class GFG {
   int isLengthEvenorOdd(Node head1) {
