@@ -2,20 +2,28 @@
 
 import java.util.*;
 import java.lang.*;
+import java.nio.charset.StandardCharsets;
 import java.io.*;
 
 class GFG {
-	public static void main (String[] args) {
-        try (BufferReader br = new BufferReader(new InputStreamReader(System.in))) {
-            int numOfTests = Integer.parseInt(br.readline());
-            
+	public static void main (final String[] args) {
+        var name = "maximum-weight-difference/input.txt";
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(name),
+                StandardCharsets.UTF_8))) {
+            final int numOfTests = Integer.parseInt(br.readLine());
+
             for (int test = 0; test < numOfTests; test++) {
-                int n = Integer.parseInt(br.readLine().trim());
-                String[] nk  = br.readLine().trim().split("\\s+");
-                String[] stringArrayIn = br.readLine().trim().split("\\s+")
-                
-                
+                // final int n = Integer.parseInt(br.readLine().trim());
+                final String[] nk  = br.readLine().trim().split("\\s+");
+                final String[] stringArrayIn = br.readLine().trim().split("\\s+");
+
+
             }
+            br.close();
+
+        }
+        catch(Exception e) {
+
         }
 	}
 }
