@@ -15,3 +15,4 @@ The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More detail
 
 1. LeftViewBinaryTree
 2. [Anagram Strings](https://practice.geeksforgeeks.org/problems/java-anagram-strings3549/1)
+3. [Amount of Water](https://practice.geeksforgeeks.org/problems/amount-of-water1348/1#)
