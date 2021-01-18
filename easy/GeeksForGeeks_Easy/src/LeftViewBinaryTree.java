@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Node {
+class BTNode {
     int data;
-    Node left, right;
+    BTNode left, right;
 
-    Node(int item) {
+    BTNode(int item) {
         data = item;
         left = right = null;
     }
 }
 
 class LeftViewBinaryTree {
-    private static void getLeftViewUtil(Node root, int currLevel, List<Integer> values) {
+    private static void getLeftViewUtil(BTNode root, int currLevel, List<Integer> values) {
         if (root == null)
             return;
 
@@ -28,7 +28,7 @@ class LeftViewBinaryTree {
 
     private static int maxLevelSeenSoFar = 0;
 
-    static ArrayList<Integer> leftView(Node root) {
+    static ArrayList<Integer> leftView(BTNode root) {
         ArrayList<Integer> values = new ArrayList<>();
         getLeftViewUtil(root, 1, values);
         maxLevelSeenSoFar = 0;
