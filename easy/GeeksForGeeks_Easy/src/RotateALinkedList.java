@@ -52,7 +52,7 @@ class Node {
     static String convertLLToString(Node head) {
         String stringData = "";
         Node current = head;
-        while (current.next != null) {
+        while (current != null) {
             stringData += String.valueOf(current.data) + " ";
             current = current.next;
         }
