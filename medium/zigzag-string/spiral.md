@@ -56,7 +56,7 @@ give me more instruction
         proceed to right
         take [0][1]
         check direction
-        proced to right
+        proceed to right
         take [0][2]
         check direction
         proceed to right
@@ -98,16 +98,32 @@ give me more instruction
         take [2][1]
         check direction
         stop
-        process and return ouput
+        process and return output
 
         O (2 x m x n)
         O(R x C)
 
 
 
-        describe algorithm
-        Start from [0][0] and incrementally traverse the row until it reaches to
-        the length - 1 index
+        left -> right, iterate 5 elements
+        change to down and decrease col elements qty from 4 to 3
+        down, iterate 3 elements
+        change to right -> left and decrease row elements qty from 5 to 4
+        right -> left, iterate 4 elements
+        change to up direction & decrease col elements qty from 3 to 2
+        up, iterate 2 elements
+        change to left -> right and decrease row elements qty from 4 to 3
+        left -> right iterate 3
+        turn down & col qty = 1
+        down iterate 1
+        turn right left and row qty = 2
+        right -> left iterate 2
+        turn up and col qty = 0
+
+
+        repeat until no 'elements' remain
+
+
 
 
 
